@@ -1,2 +1,5 @@
 pandas
 datasets
+numpy
+scipy
+matplotlib
