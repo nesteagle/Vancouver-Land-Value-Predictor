@@ -1,2 +1,6 @@
 pandas
 datasets
+numpy
+scipy
+matplotlib
+gradio
