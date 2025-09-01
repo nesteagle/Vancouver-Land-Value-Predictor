@@ -12,7 +12,7 @@ short_description: A data analysis and regression ML project
 
 # Vancouver Land Value Predictor
 
-Predicts Vancouver property values by neighbouhood using property tax data and (histogram-based) gradient boosted regression.
+Predicts Vancouver property values by neighbourhood using property tax data and (histogram-based) gradient boosted regression.
 
 ---
 
