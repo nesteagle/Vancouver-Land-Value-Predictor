@@ -12,14 +12,14 @@ short_description: A data analysis and regression ML project
 
 # Vancouver Land Value Predictor
 
-Predicts Vancouver property values by neighbouhood using property tax data and (histogram-based) gradient boosted regression.
+Predicts Vancouver property values by neighbourhood using property tax data and (histogram-based) gradient boosted regression.
 
 ---
 
 ## Features
 
 - Uses 2020-2025 Vancouver property tax data.
-- Visualizer using Matplotlib on neighbourhood zoning.
+- Visualizer using Matplotlib on neighbourhood boundaries.
 - Fast model training using Histogram Gradient Boosted Regression.
 - Interactive web UI via [Gradio](https://gradio.app/).
 - Predicts land values based on zoning type, legal classification, and neighbourhood.
@@ -27,7 +27,7 @@ Predicts Vancouver property values by neighbouhood using property tax data and (
 
 ## Project Overview
 
-This project is an interactive predictor and visualizer based on the **Vancouver Property Tax** dataset. It uses robust cleaning measures to clean a 1.2 million dataset for neighbourhood categories (which weren't provided), and estimates the average price of property based on each neighbourhood. 
+This project is an interactive predictor and visualizer based on the **Vancouver Property Tax** dataset. It uses robust cleaning measures to clean  1.2M+ records for neighbourhood categories (which weren't provided), and estimates the average price of property based on each neighbourhood. 
 
 ## Usage
 
@@ -57,8 +57,14 @@ This project is an interactive predictor and visualizer based on the **Vancouver
 
 - Trains a Histogram Gradient Boosting Regressor on log-transformed land values for better handling of price distributions.
 
+## Model Performance
+
+- **R² Score**: 0.807 - explains 80.7% of price variance
+- **RMSE**: $1,489,509 on land values
+- **Training Data**: 522,030 properties after cleaning and filtering
+
 ## Limitations
 
 - Predictions do not use property size, which wasn't provided in the dataset.
-- Neighbourhood codes were not given by BCAssessment and had to be categorized manually.
+- Neighbourhood codes were not given by BC Assessment and had to be categorized manually.
 - Inaccurate entries in the dataset and possible entries that escaped cleaning.
